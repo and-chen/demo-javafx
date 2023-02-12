@@ -3,6 +3,8 @@ module com.demo {
     requires javafx.fxml;
 
 
-    opens com.demo to javafx.fxml;
-    exports com.demo;
+    opens com.andchen to javafx.fxml;
+    exports com.andchen;
+    exports com.andchen.model;
+    opens com.andchen.model to javafx.fxml;
 }
